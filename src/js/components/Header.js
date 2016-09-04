@@ -17,7 +17,6 @@ const Header = (props) => {
 
 Header.propTypes = {
     title: PropTypes.string.isRequired,
-    onChangeZoom: PropTypes.func.isRequired,
     onChangeLayout: PropTypes.func.isRequired
 };
 
