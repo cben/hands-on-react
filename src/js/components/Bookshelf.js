@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import BookCard from "./BookCard";
 
 export default class Bookshelf extends Component {
     render() {
@@ -6,12 +7,9 @@ export default class Bookshelf extends Component {
 
         return (
             <div class={"bookshelf " + layout}>
-                {book.title}
-                {/*
                 <div class="bookshelf-item">
                     <BookCard {...book}/>
                 </div >
-                 */}
             </div>
         );
     }
