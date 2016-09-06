@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 export default class BookCard extends Component {
     render() {
@@ -13,3 +13,11 @@ export default class BookCard extends Component {
         );
     }
 }
+
+BookCard.propTypes = {
+  bookId: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string,
+  rating: PropTypes.number,
+  cover: PropTypes.string,
+};
