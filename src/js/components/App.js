@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Bookshelf from "./Bookshelf";
 import Header from "./Header";
-// step 1.A - import Footer
+import Footer from "./Footer";
 
 const zoom = 0.1;
 
@@ -18,7 +18,7 @@ export default class App extends Component {
                 <Header title="Bookshelf" onChangeLayout={this.changeLayout.bind(this)}/>
                 <Bookshelf books={books} layout={layout}/>
                 {/* step 1.A - begin Footer.js */}
-                <footer class="footer">Total: 1</footer>
+                <Footer count={books.length}/>
                 {/* end Footer.js */}
             </div>
         );
